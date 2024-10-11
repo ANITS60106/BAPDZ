@@ -7,18 +7,18 @@ def tsepytuponaiti(h, k):
 
 def k_tasamayaraznitsaprokotoruyugovorilRuslan(n, m, h):
     low = 0
-    high = 1000000
+    rostiks = 1000000
     out = -1
 
-    while low <= high:
-        mid = (low + high) // 2
+    while low <= rostiks:
+        mid = (low + rostiks) // 2
         с = tsepytuponaiti(h, mid)
 
         if с == m:
             result = mid
-            high = mid - 1
+            rostiks = mid - 1
         elif с < m:
-            high = mid - 1
+            rostiks = mid - 1
         else:
             low = mid + 1
 
