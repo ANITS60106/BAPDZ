@@ -15,14 +15,14 @@ def k_tasamayaraznitsaprokotoruyugovorilRuslan(n, m, h):
         с = tsepytuponaiti(h, mid)
 
         if с == m:
-            result = mid
+            out = mid
             rostiks = mid - 1
         elif с < m:
             rostiks = mid - 1
         else:
             low = mid + 1
 
-    return result
+    return out
 
 n, m = input().split()
 n, m = int(n), int(m)
